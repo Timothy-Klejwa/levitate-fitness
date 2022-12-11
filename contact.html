@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Levitate Fitness</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <header>
@@ -33,41 +33,41 @@
             <a href ="index.html"><h1>L E V I T A T E</h1></a>
         </nav>
     </header>
+    
 <main>
     <section>
-    <h2>Coming Soon...</h2>
-    <div class="soon">
-        <img src="images/girl-black-L.png" alt="">
-        <h3>Women's Ulitimate Black Shirt</h3>
-    </div>
-    <div class="soon">
-        <img src="images/grey-shirt-L.png" alt="">
-        <h3>Men's Ultimate Grey Shirt</h3>
-    </div>
-    <div class="soon">
-        <img src="images/black-shirt-L.png" alt="">
-        <h3>Men's Ultimate Shirt</h3>
-    </div>
-    </section>
+        <h1 class="contacth">Contact Us</h1>
+        <p>Thanks for taking the time to reach out to us!</p>
+        <p>Here at Levitate Fitness we are always trying our best to help our customers in any way we can. </p>
+        <p>Feel free to fill out the form below. Please be sure to include your correct email address so we can get back to you in a timely manner.</p>
+    <form id="myForm">
+        <div class="NE">
+            <input type="text" id="name" name="name" placeholder="Your Name">
+    
+            <input type="text" id="email" name="email" placeholder="Your Email">
+        </div>
+        <div class="M">
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+        </div>
+        <div class="actions">
+            <input type="submit" value="Send Message">
+        </div>
+    </form> 
+    <div id="notification"></div>
+    <script>
+        // Listen for form submission
+        document.getElementById('myForm').addEventListener('submit', function(e) {
+            // Prevent default form submission
+            e.preventDefault();
 
-    <section class="featured">
-    <h2>Featured Products</h2>
-    <div class="images">
-        <img src="images/girl-black-L.png" alt="">
-        <h3>Perfect Black Shirt</h3>
-    </div>
-    <div class="images">
-        <img src="images/grey-shirt-L.png" alt="">
-        <h3>Heather Grey Shirt</h3>
-    </div>
-    <div class="images">
-        <img src="images/black-shirt-L.png" alt="">
-        <h3>Levitate Special Black Shirt</h3>
-    </div>
-</section>
+            // Display the notification
+            document.getElementById('notification').innerHTML = '<p>Your submission has been received!</p>';
+        });
+    </script>
+    </section>
 </main>
 
-    <div class="footershop">
+    <div class="footer">
         <footer>
             <p>Copyright © 2022 Levitate Fitness. All rights reserved.</p>
         </footer>
