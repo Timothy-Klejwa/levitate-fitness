@@ -368,7 +368,7 @@ img{
         padding: .1rem;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   /* styles for screens with a maximum width of 400px */
 
 
